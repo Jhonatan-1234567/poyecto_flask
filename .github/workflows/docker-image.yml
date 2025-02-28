@@ -18,8 +18,8 @@ jobs:
        - name: Checkout repository
          uses: actions/checkout@v4
        - name: Logearnos en GHCR
-         run: echo "${{ secrets.TOKEN }}" | docker login ghcr.io -u Jhonatan-1234567 --password-stdin
+         run: echo "${{ secrets.TOKEN }}" | docker login ghcr.io -u jhonatan-1234567 --password-stdin
        - name: Crear imagen
-         run: docker build . -t ghcr.io/Jhonatan-1234567/flask-image:latest
+         run: docker build . -t ghcr.io/jhonatan-1234567/flask-image:latest
        - name: Desplegar imagen
-         run: docker push ghcr.io/Jhonatan-1234567/flask-image:latest
+         run: docker push ghcr.io/jhonatan-1234567/flask-image:latest
