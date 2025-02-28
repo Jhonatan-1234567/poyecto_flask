@@ -1,11 +1,11 @@
 name: Actions
 
- on:
+on:
    push:
      branches:
        - main
 
- jobs:
+jobs:
    decir-hola:
      runs-on: ubuntu-latest
      permissions:
